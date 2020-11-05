@@ -1,21 +1,15 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
+const string = `/*今天我们来画一只黄皮耗子
+首先我们将他的皮涂成黄色*/
 
-*::before, *::after {
-    box-sizing: border-box;
-}
-
-body {
-    min-height: 100vh;
+#html {
     background: #ffe600;
 }
-
 .skin {
     position: relative;
 }
+
+/*然后
+我们给他按上一个鼻子*/
 
 .nose {
     border: 14px solid;
@@ -25,10 +19,13 @@ body {
     border-radius: 10px;
     position: relative;
     left: 50%;
-    top: 145px;
-    margin-left: -10px;
+    top: 105px;
+    margin-left: -14px;
     z-index: 10;
 }
+
+/*当我们把手放在鼻子上时
+让他的鼻子可以左右晃动*/
 
 @keyframes wave {
     0% {
@@ -50,6 +47,9 @@ body {
     animation: wave 250ms infinite linear;
 }
 
+/*现在我们给他一双眼睛
+让他能够看见东西*/
+
 .eye {
     border: 3px solid black;
     width: 64px;
@@ -57,7 +57,7 @@ body {
     position: absolute;
     left: 50%;
     margin-left: -32px;
-    top: 100px;
+    top: 60px;
     border-radius: 50%;
     background: #2e2e2e;
 }
@@ -82,12 +82,15 @@ body {
     transform: translateX(132px);
 }
 
+/*为了让皮卡丘吃到美味的苹果
+我们再给他一张嘴*/
+
 .mouth {
     width: 200px;
     height: 300px;
     position: absolute;
     left: 50%;
-    top: 170px;
+    top: 130px;
     margin-left: -100px;
 }
 
@@ -149,10 +152,13 @@ body {
     border-radius: 200px/210px;
 }
 
+/*最后别忘了皮卡丘的杀伤性武器
+能放电的脸颊*/
+
 .face {
     position: absolute;
     left: 50%;
-    top: 222px;
+    top: 182px;
     margin-left: -41px;
     border: 3px solid black;
     background: red;
@@ -180,4 +186,9 @@ body {
     transform: translateX(180px);
 }
 
-/*# sourceMappingURL=style.b6e4f7fd.css.map */
+/*好了
+可爱的皮卡丘画完了
+谢谢观看*/
+`
+
+export default string
